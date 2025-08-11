@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DNA Replication Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <h1>DNA Replication Game</h1>
+    <p>Player: <span id="playerName"></span></p>
+
+    <div id="gameStage">
+        <img id="stageImage" src="" alt="Current Step Image">
+        <p id="stageDescription"></p>
+    </div>
+
+    <div id="enzymeButtons"></div>
+
+    <div id="inputArea" style="display:none;">
+        <p>Template Strand: <span id="templateStrand"></span></p>
+        <input type="text" id="baseInput" placeholder="Type Complementary Strand">
+        <button id="submitBase">Submit</button>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>

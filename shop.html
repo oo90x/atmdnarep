@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select Enzymes</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <h1>Select Necessary Enzymes for DNA Replication</h1>
+    <p>Welcome, <span id="playerName"></span>! Drag or click the enzymes you need.</p>
+
+    <div class="enzyme-list">
+        <!-- Example enzymes -->
+        <div class="enzyme" draggable="true" data-name="Helicase">Helicase</div>
+        <div class="enzyme" draggable="true" data-name="Primase">Primase</div>
+        <div class="enzyme" draggable="true" data-name="DNA Polymerase III">DNA Polymerase III</div>
+        <div class="enzyme" draggable="true" data-name="Ligase">Ligase</div>
+        <div class="enzyme" draggable="true" data-name="RNA Polymerase">RNA Polymerase</div>
+    </div>
+
+    <h2>Your Selection</h2>
+    <div id="selectedArea" class="selected-area" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+    <button id="proceedBtn">Proceed to Game</button>
+
+    <script src="shop.js"></script>
+</body>
+</html>
